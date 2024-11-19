@@ -1,5 +1,7 @@
-/* Style général */
-body {
+/* ============================
+   Style général
+   ============================ */
+   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,7 +9,9 @@ body {
     color: #333;
 }
 
-/* En-tête */
+/* ============================
+   En-tête (Header)
+   ============================ */
 header {
     background-color: #005f73;
     color: #fff;
@@ -20,7 +24,9 @@ header h1 {
     font-size: 2rem;
 }
 
-/* Navigation */
+/* ============================
+   Navigation (Utilisée sur toutes les pages)
+   ============================ */
 nav ul {
     list-style: none;
     padding: 0;
@@ -40,21 +46,9 @@ nav ul li a {
     font-size: 1rem;
 }
 
-/* Section principale */
-main {
-    padding: 2rem;
-    text-align: center;
-}
-
-/* Pied de page */
-footer {
-    background-color: #005f73;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.8rem;
-}
-/* Section de bienvenue */
+/* ============================
+   Accueil (Page d'accueil)
+   ============================ */
 .hero {
     background: linear-gradient(to right, #005f73, #023047);
     color: #fff;
@@ -71,8 +65,10 @@ footer {
     font-size: 1.2rem;
 }
 
-/* Section présentation */
-.presentation, .services, .avis, .contact-cta {
+/* ============================
+   Section présentation (Page à propos ou présentation)
+   ============================ */
+.presentation {
     margin: 2rem auto;
     padding: 1.5rem;
     max-width: 800px;
@@ -82,7 +78,19 @@ footer {
     border-radius: 8px;
 }
 
-/* Listes */
+/* ============================
+   Services (Page d'activités ou services)
+   ============================ */
+.services {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
 .services ul {
     list-style-type: disc;
     text-align: left;
@@ -95,7 +103,9 @@ footer {
     font-size: 1rem;
 }
 
-/* Citations */
+/* ============================
+   Avis (Page d'avis)
+   ============================ */
 .avis blockquote {
     font-size: 1.1rem;
     margin: 1rem 0;
@@ -103,114 +113,22 @@ footer {
     color: #555;
 }
 
-/* Bouton d'appel à l'action */
-.cta-button {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    background: #005f73;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-    background: #023047;
-}
-/* Bouton de retour à l'accueil */
-.back-home-button {
-    display: inline-block;
+/* ============================
+   Contact (Page de contact)
+   ============================ */
+.contact-cta {
     margin: 2rem auto;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    background: #005f73;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    text-align: center;
-}
-
-.back-home-button:hover {
-    background: #023047;
-}
-/* Style pour le tableau des horaires */
-.horaires-table {
-    width: 100%;
-    max-width: 600px;
-    margin: 2rem auto;
-    border-collapse: collapse;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.horaires-table thead {
-    background: #005f73;
-    color: #fff;
-}
-
-.horaires-table th, .horaires-table td {
-    padding: 1rem;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-
-.horaires-table tbody tr:nth-child(odd) {
-    background: #f9f9f9;
-}
-
-.horaires-table tbody tr:nth-child(even) {
-    background: #eef6f8;
-}
-/* Style pour les tableaux de tarifs */
-.tarifs-table {
-    width: 100%;
+    padding: 1.5rem;
     max-width: 800px;
-    margin: 2rem auto;
-    border-collapse: collapse;
+    text-align: center;
+    background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-.tarifs-table thead {
-    background: #005f73;
-    color: #fff;
-}
-
-.tarifs-table th, .tarifs-table td {
-    padding: 1rem;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-
-.tarifs-table tbody tr:nth-child(odd) {
-    background: #f9f9f9;
-}
-
-.tarifs-table tbody tr:nth-child(even) {
-    background: #eef6f8;
-}
-
-/* Style pour les réductions */
-.tarifs-reduits ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 1rem;
-}
-
-.tarifs-reduits li {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-}
-
-/* Style général pour la section tarifs */
-h3 {
-    color: #023047;
-    font-size: 1.8rem;
-    margin-top: 2rem;
-    text-align: center;
-}
-/* Style pour le formulaire de réservation */
+/* ============================
+   Réservation (Page de réservation)
+   ============================ */
 .reservation-form {
     max-width: 600px;
     margin: 2rem auto;
@@ -255,28 +173,39 @@ h3 {
     background-color: #023047;
 }
 
-/* Style pour la zone de demande spéciale */
-.reservation-form textarea {
-    resize: vertical;
+/* ============================
+   Tarifs (Page des tarifs)
+   ============================ */
+.tarifs-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Style pour le bouton retour à l'accueil */
-.back-home-button {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 0.8rem 1.5rem;
+.tarifs-table thead {
     background: #005f73;
     color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    text-align: center;
 }
 
-.back-home-button:hover {
-    background: #023047;
+.tarifs-table th, .tarifs-table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
 }
-/* Style général pour les sections d'activités */
+
+.tarifs-table tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.tarifs-table tbody tr:nth-child(even) {
+    background: #eef6f8;
+}
+
+/* ============================
+   Activités (Page des activités)
+   ============================ */
 .activite {
     margin: 2rem auto;
     padding: 1.5rem;
@@ -314,7 +243,10 @@ h3 {
     left: 0;
     color: #005f73;
 }
-/* Style pour la section "À propos" */
+
+/* ============================
+   À propos (Page à propos)
+   ============================ */
 section {
     margin-bottom: 2rem;
     padding: 1.5rem;
