@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Sa&M Piscine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sa&M Piscine</h1>
+    </header>
+    <main>
+        <h2>Réservez votre créneau</h2>
+        <p>Veuillez remplir le formulaire ci-dessous pour réserver un créneau à la piscine. Nous vous contacterons pour confirmer votre réservation.</p>
+
+        <!-- Formulaire de réservation -->
+        <form action="#" method="POST" class="reservation-form">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date de réservation :</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="horaire">Horaire :</label>
+                <select id="horaire" name="horaire" required>
+                    <option value="8h00">8h00</option>
+                    <option value="10h00">10h00</option>
+                    <option value="12h00">12h00</option>
+                    <option value="14h00">14h00</option>
+                    <option value="16h00">16h00</option>
+                    <option value="18h00">18h00</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="special-requests">Demande spéciale :</label>
+                <textarea id="special-requests" name="special-requests" rows="4" placeholder="Si vous avez des demandes particulières, veuillez les indiquer ici."></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Réserver maintenant</button>
+        </form>
+
+        <!-- Bouton retour à l'accueil -->
+        <a href="index.html" class="back-home-button">Retour à l'Accueil</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sa&M Piscine. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

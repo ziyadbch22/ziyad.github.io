@@ -1,0 +1,356 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #005f73;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #023047;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Section principale */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Pied de page */
+footer {
+    background-color: #005f73;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+/* Section de bienvenue */
+.hero {
+    background: linear-gradient(to right, #005f73, #023047);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Section présentation */
+.presentation, .services, .avis, .contact-cta {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Listes */
+.services ul {
+    list-style-type: disc;
+    text-align: left;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+.services ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+/* Citations */
+.avis blockquote {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* Bouton d'appel à l'action */
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: #005f73;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #023047;
+}
+/* Bouton de retour à l'accueil */
+.back-home-button {
+    display: inline-block;
+    margin: 2rem auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: #005f73;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.back-home-button:hover {
+    background: #023047;
+}
+/* Style pour le tableau des horaires */
+.horaires-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.horaires-table thead {
+    background: #005f73;
+    color: #fff;
+}
+
+.horaires-table th, .horaires-table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.horaires-table tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.horaires-table tbody tr:nth-child(even) {
+    background: #eef6f8;
+}
+/* Style pour les tableaux de tarifs */
+.tarifs-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tarifs-table thead {
+    background: #005f73;
+    color: #fff;
+}
+
+.tarifs-table th, .tarifs-table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tarifs-table tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.tarifs-table tbody tr:nth-child(even) {
+    background: #eef6f8;
+}
+
+/* Style pour les réductions */
+.tarifs-reduits ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.tarifs-reduits li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+/* Style général pour la section tarifs */
+h3 {
+    color: #023047;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+/* Style pour le formulaire de réservation */
+.reservation-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.reservation-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.reservation-form label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.reservation-form input, 
+.reservation-form select, 
+.reservation-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.reservation-form button.submit-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-form button.submit-button:hover {
+    background-color: #023047;
+}
+
+/* Style pour la zone de demande spéciale */
+.reservation-form textarea {
+    resize: vertical;
+}
+
+/* Style pour le bouton retour à l'accueil */
+.back-home-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background: #005f73;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.back-home-button:hover {
+    background: #023047;
+}
+/* Style général pour les sections d'activités */
+.activite {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #f1f1f1;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.activite h3 {
+    color: #023047;
+    font-size: 1.8rem;
+}
+
+.activite p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.activite ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.activite ul li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.activite ul li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #005f73;
+}
+/* Style pour la section "À propos" */
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    font-size: 1.8rem;
+    color: #023047;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+section ul li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #005f73;
+}
